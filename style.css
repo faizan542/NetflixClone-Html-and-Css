@@ -81,7 +81,7 @@ nav button {
     line-height: 1.5;
 }
 
-.sepration {
+.separation {
     height: 7px;
     background-color: rgb(59, 59, 59);
 }
@@ -134,9 +134,11 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4px;
     max-width: 70vw;
     margin: auto;
     color: white;
+    /* flex-wrap: wrap; */
 }
 
 .secImg {
@@ -144,16 +146,16 @@ nav button {
 }
 
 .secImg img {
-    width: 360px;
+    width: 500px;
     position: relative;
     z-index: 10;
 }
 
 .secImg video {
     position: absolute;
-    right: 50px;
-    top: 92px;
-    width: 260px;
+    right: 53px;
+    top: 112px;
+    width: 380px;
 }
 
 .first>div {
@@ -172,15 +174,128 @@ nav button {
     font-size: 24px;
 }
 
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s cubic-bezier(0, 0, 0.18, 1.13);
+    font-size: 24px;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    margin: 30px auto;
+    max-width: 80vw;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
 
 
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
 
 
+@media screen and (max-width: 1300px) {
+    nav{
+        max-width: 90vw;
+    }
 
+    .first {
+        flex-wrap: wrap;
+    }
 
+    .secImg img {
+        width: 305px;
+    }
 
+    .secImg video {
+        width: 217px;
+        top: 84px;
+        right: 44px;
+    }
 
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
 
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+ 
+}
 
 /* Media query for small devices */
 @media screen and (max-width: 530px) {
